@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer World Shop</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/icon.jpg">
+</head>
+<body>
+    <nav class="navbar_my">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./productos.html">Productos</a>
+                <ul>
+                    <li><a href="">PC</a></li>
+                    <li><a href="">Notebooks</a></li>
+                    <li><a href="">Periféricos</a></li>
+                    <li><a href="">Pantallas</a></li>
+                    <li><a href="">Accesorios</a></li>
+                </ul>
+            </li>
+            <li><a href="./envio.html">Envío</a></li>
+            <li><a href="./opiniones.html">Opiniones</a></li>
+        </ul>
+    </nav>
+    <header class="headerIndex">
+        <div class="headerIndex_info">
+            <h1>Envío</h1>
+        </div>
+    </header>
+    <main>
+        <div class="listShipping">
+                <ul class="listShipping__order">
+                    <li class="listShipping__item">Localidades</li>
+                    <li class="listShipping__item">Días disponibles</li>
+                    <li class="listShipping__item">Hacé tu pedido!</li>
+                </ul>
+                <img class="listShipping__img" src="../assets/img/envios-a-domicilio.png" alt="envios a domicilio">
+        </div>
+        <h3 class="localitiesTittle">Localidades</h3>
+        <div class="localitiesMap">
+            <iframe class="localitiesMap__google col-12 col-md-6" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2342.175304186073!2d-60.574451734188216!3d-33.88099733189397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1669917974381!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3 class="localitiesTittle">Días disponibles</h3>
+        <div class="calendar">
+            <iframe class="calendarGoogle" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&showTitle=0&showNav=0&showPrint=0&src=dG9iaW5kYXJ0QGdtYWlsLmNvbQ&src=NmYwNTNlOWRjZjY4YTA0Nzg3YWQ5MmJlYTY1Yzk3MDQxYTlkYWJjOTQzNzg4NmU3NDk4N2Q4NWQ3YTEyMzYyZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MzYwMzJjNjE4OTE0MjkwYTllZjNhM2QzZTdlNWQyOGFkYzMzMjZkNmU5ODY3MjAyOTFjMDJkMTIwNDBiMmM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%23EF6C00&color=%23A79B8E&color=%237986CB&color=%237986CB"></iframe>
+        </div>
+        <h3 class="localitiesTittle">Hacé tu pedido!</h3>
+        <div class="orderForm">
+            <form class="order__form" action="" method="get">
+                <label for="">Nombre:</label>
+                <input type="text" name="nombre" required>
+                <br>
+                <label for="">Apellido</label>
+                <input type="text" name="apellido" required>
+                <br>
+                <label for="">Email</label>
+                <input type="email" name="email" required>
+                <br>
+                <label for="">Número de télefono</label>
+                <input type="number" name="telefono" required>
+                <br>
+                <label for="">Número de pedido</label>
+                <input type="number" name="pedido" required>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer__card">
+                <h4 class="footer__text">Computer World Shop</h4>
+                <img class="footer__img" src="../assets/img/twitter.png" alt="Twitter">
+                <img class="footer__img" src="../assets/img/instagram.png" alt="Instagram">
+                <img class="footer__img" src="../assets/img/whatsapp.png" alt="Whatsapp">
+                <img class="footer__img" src="../assets/img/facebook.png" alt="Facebook">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

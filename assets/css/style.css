@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+/*Body*/
+.bodyGrid__index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 300px 1fr 10px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+.bodyGrid__product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 300px 1fr 10px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+.bodyGrid__nos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 300px 1fr 10px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+/*Navegador*/
+.navbar_my{
+    grid-area: nav;
+    padding: 10px;
+    background-color: #06002C;
+    font-family: Roboto-Regular;
+}
+
+.navbar_my > ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar_my > ul > li{
+    position: relative;
+}
+
+.navbar_my > ul > li:hover ul{
+    max-height: 320px;
+    transition: 0.5s;
+}
+
+.navbar_my  ul  li  a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navbar_my > ul > li > ul{
+    max-height: 0;
+    position: absolute;
+    list-style: none;
+    left: -4px;
+    overflow: hidden;
+    background-color: #06002C;
+}
+/*Header*/
+.headerIndex{
+    grid-area: header;
+    font-family: Roboto-Regular;
+    font-size: 40px;
+    background-image: url(../img/rm251-aum-14-g.jpg);
+    width: 100%;
+    height: 300px;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/*Main*/
+main{
+    grid-area: main;
+    background-image: url(../img/fondo-header-index.jpg);
+    font-family: Roboto-Regular;
+}
+
+/*Inicio*/
+
+.offer{
+    font-family: Roboto-Regular;
+    color: white;
+    background-color: #06002C;
+    margin: 10px;
+    padding: 10px;
+    height: 55px;
+    width: 290px;
+    border: 3px solid #F06BF2;
+    border-radius: 15px;
+    text-align: center;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.offerCard{
+    background-color: #06002C;
+    width: 250px;
+    border: solid 3px #F06BF2;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Roboto-Regular;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.offerCard:hover{
+    transform: translate(10px,30px);
+}
+.offerCard__img{
+    width: 100%;
+}
+.offerCard__tittle{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+.offerCard__desc{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 2px inset #F06BF2;
+    border-radius: 8px;
+
+}
+.offerCard__btn{
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #F06BF2;
+    color: white;
+}
+
+
+
+/*Nosotros*/
+
+.list__nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.list__nos__order{
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: white;
+    list-style: none;
+}
+.list__nos__item{
+    width: 450px;
+    font-size: 40px;
+    background-color: #06002C;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+    border: #F06BF2 solid;
+    border-radius: 8px;
+}
+.list__nos__img{
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 612px;
+}
+.who__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    margin: 10px;
+    padding: 10px;
+}
+.who__tittle{
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline solid #F06BF2;
+}
+.who__text{    
+    color: white;
+    background-color: #06002C;
+    text-align: center;
+    padding: 10px;
+    border: #F06BF2 solid;
+    height: 100px;
+    width: 700px;
+}
+.who__img{
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 700px;
+}
+
+.our__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    padding: 10px;
+}
+.our__tittle{
+    position: relative;
+    top: 0px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline solid #F06BF2;
+}
+.our__text{
+    color: white;
+    background-color: #06002C;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    border: #F06BF2 solid;
+    height: 150px;
+    width: 700px;
+}
+.our__img{
+    height: 400px;
+    width: 700px;
+
+}
+.want__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    padding: 10px;
+}
+.want__tittle{
+    position: relative;
+    top: 0px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline solid #F06BF2;
+}
+.want__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #06002C;
+    color: white;
+    border: #F06BF2 solid 2px;
+}
+/*Productos*/
+.menuBar{
+    display: flex;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    background-color: #06002C;
+    
+}
+.menuBar__item{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.menuBar__item__seleccionado{
+    display: inline;
+    background-color: #F06BF2;
+    border: #F06BF2 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+
+}
+.menuBar__item__view{
+    display: inline;
+    text-decoration: underline solid 2px #F06BF2;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.productTittle{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 60px;
+    font-family: Roboto-Regular;
+    color: white;
+    background-color: #06002C;
+    border: #F06BF2 solid 3px;
+    border-radius: 30px;
+    text-align: center;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.productCard{
+    background-color: #06002C;
+    width: 250px;
+    border: solid 3px #F06BF2;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Roboto-Regular;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.productCard:hover{
+    transform: translate(10px,15px);
+}
+.productCard__img{
+    width: 100%;
+}
+.productCard__tittle{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+.productCard__desc{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 2px inset #F06BF2;
+    border-radius: 8px;
+
+}
+.productCard__btn{
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #F06BF2;
+    color: white;
+}
+/*Envio*/
+.listShipping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 10px;
+    margin-left: 10px;
+    align-items: center;
+}
+.listShipping__order{
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: white;
+    list-style: none;
+}
+.listShipping__item{
+    width: 450px;
+    font-size: 40px;
+    background-color: #06002C;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+    border: #F06BF2 solid;
+    border-radius: 8px;
+}
+.listShipping__img{
+    margin: 10px;
+    border: #F06BF2 solid 3px;
+    border-radius: 8px;
+    background-color: #06002C;
+    height: 430px;
+}
+.localitiesTittle{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 60px;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: white;
+    background-color: #06002C;
+    border: #F06BF2 solid 3px;
+    border-radius: 30px;
+    text-align: center;
+}
+.localitiesMap{
+    display: flex;
+}
+.localitiesMap__google{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 400px;
+}
+.calendar{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.calendarGoogle{
+    height: 400px;
+    width: 500px;
+}
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    padding: 10px;
+}
+.order__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #06002C;
+    color: white;
+    border: #F06BF2 solid 2px;
+}
+/*Opiniones*/
+.opinionTittle{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: white;
+    background-color: #06002C;
+    border: #F06BF2 solid 3px;
+    border-radius: 30px;
+    text-align: center;
+}
+.opinionCards1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 10px;
+}
+.opinionCards2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 10px;
+}
+.opinionCards3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 10px;
+}
+.opinionCard{
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 280px;
+    font-family: Roboto-Regular;
+    border: #F06BF2 2px solid;
+    background-color: #06002C;
+}
+.opinionCard__imgProfile{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.opinionCard__name{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.opinionCard__opinion{
+    color: white;
+    margin: 5px;
+}
+.opinionCard__imgRating{
+    width: 100px;
+    margin: 5px;
+}
+/*Footer*/
+footer{
+    grid-area: footer;
+}
+.footer__card{
+    display: flex;
+    justify-content: space-around;
+    background-color: #06002C;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+}
+.footer__img{
+    height: 30px;
+}
