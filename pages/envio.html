@@ -10,27 +10,109 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="img-nav" src="../assets/img/icon.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../pages/productos.html">PC</a></li>
+                  <li><a class="dropdown-item" href="../pages/productos.html">Notebooks</a></li>
+                  <li><a class="dropdown-item" href="../pages/productos.html">Periféricos</a></li>
+                  <li><a class="dropdown-item" href="../pages/productos.html">Pantallas</a></li>
+                  <li><a class="dropdown-item" href="../pages/productos.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/envio.html">Envío</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/opiniones.html">Opiniones</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
-    <header>
-        <div class="padre row">
-            <div class="col-4 col-md-12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div class="col-4 col-md-12">
-                <img class="img-fluid" src="../assets/img/facebook.png" alt="">
-            </div>
-            <div class="col-4 col-md-12">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
+    <header class="header__boot row">
+        <div class="col-12 text-center">
+            <h1 class="fs-1 fw-bold">Envío</h1>
         </div>
     </header>
     <main>
-
+        <div class="row">
+            <p class="col-md-3"></p>
+            <ul class="list-group col-12 col-md-6">
+                <li class="list-group-item-custom list-group-item text-center fs-4 p-2 m-3 border border-3 border-danger-subtle">Localidades</li>
+                <li class="list-group-item-custom list-group-item text-center fs-4 p-2 m-3 border border-3 border-danger-subtle">Días disponibles</li>
+                <li class="list-group-item-custom list-group-item text-center fs-4 p-2 m-3 border border-3 border-danger-subtle">Hacé tu pedido!</li>
+            </ul>
+            <p class="col-md-3"></p>
+        </div>
+        <div class="row">
+            <h3 class="text-center border border-5 border-danger-subtle col-8 col-md-4 m-4 fs-2 text-light titulo-envio-custom">Localidades</h3>
+        </div>
+        <div class="row">
+            <iframe class="col-8 col-md-6 m-4" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2342.175304186073!2d-60.574451734188216!3d-33.88099733189397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1669917974381!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="row">
+            <h3 class="text-center border border-5 border-danger-subtle col-8 col-md-4 m-4 fs-2 text-light titulo-envio-custom">Días disponibles</h3>
+        </div>
+        <div class="row">
+            <iframe class="col-8 col-md-6 m-4 calendar-custom" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&showTitle=0&showNav=0&showPrint=0&src=dG9iaW5kYXJ0QGdtYWlsLmNvbQ&src=NmYwNTNlOWRjZjY4YTA0Nzg3YWQ5MmJlYTY1Yzk3MDQxYTlkYWJjOTQzNzg4NmU3NDk4N2Q4NWQ3YTEyMzYyZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MzYwMzJjNjE4OTE0MjkwYTllZjNhM2QzZTdlNWQyOGFkYzMzMjZkNmU5ODY3MjAyOTFjMDJkMTIwNDBiMmM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%23EF6C00&color=%23A79B8E&color=%237986CB&color=%237986CB"></iframe>
+        </div>
+        <div class="row">
+            <h3 class="text-center border border-5 border-danger-subtle col-8 col-md-4 m-4 fs-2 text-light titulo-envio-custom">Hacé tu pedido!</h3>
+        </div>
+        <div class="row">
+            <form class="col-6 form-envio-custom text-light p-2 border border-2 border-danger-subtle" action="">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="Escriba su número de teléfono">
+                </div>
+                <div class="mb-3">
+                    <label for="pedido" class="form-label">Pedido</label>
+                    <input type="number" class="form-control" id="pedido" placeholder="Escriba su número de pedido">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer>
-
+        <section class="footer">
+            <div class="footer__card">
+                <h4 class="footer__text">Computer World Shop</h4>
+                <img class="footer__img" src="../assets/img/twitter.png" alt="Twitter">
+                <img class="footer__img" src="../assets/img/instagram.png" alt="Instagram">
+                <img class="footer__img" src="../assets/img/whatsapp.png" alt="Whatsapp">
+                <img class="footer__img" src="../assets/img/facebook.png" alt="Facebook">
+            </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

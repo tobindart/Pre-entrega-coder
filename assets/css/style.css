@@ -73,6 +73,14 @@
     overflow: hidden;
     background-color: #06002C;
 }
+.navbar-custom{
+    background-color: #06002C;
+}
+.img-nav{
+    height: 50px;
+    width: 100%;
+}
+
 /*Header*/
 .headerIndex{
     grid-area: header;
@@ -83,6 +91,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+.header__boot{
+    background-image: url(../img/rm251-aum-14-g.jpg);
+    background-size:cover;
     color: white;
 }
 /*Main*/
@@ -357,69 +370,21 @@ main{
     background-color: #F06BF2;
     color: white;
 }
-/*Envio*/
 
+/*Envio*/
+.titulo-envio-custom{
+    background-color: #06002C;
+}
+.form-envio-custom{
+    width: 600px;
+    margin: 20px auto;
+    background-color: #06002C;
+}
+.calendar-custom{
+    height: 300px;
+}
 /*Opiniones*/
-.opinionTittle{
-    margin-top: 0px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 60px;
-    font-family: Roboto-Regular;
-    font-size: 30px;
-    color: white;
-    background-color: #06002C;
-    border: #F06BF2 solid 3px;
-    border-radius: 30px;
-    text-align: center;
-}
-.opinionCards1{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin-left: 10px;
-}
-.opinionCards2{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin-left: 10px;
-}
-.opinionCards3{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin-left: 10px;
-}
-.opinionCard{
-    position: relative;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    height: 280px;
-    font-family: Roboto-Regular;
-    border: #F06BF2 2px solid;
-    background-color: #06002C;
-}
-.opinionCard__imgProfile{
-    width: 80px;
-    height: 80px;
-    margin: 5px;
-}
-.opinionCard__name{
-    color: white;
-    font-size: 20px;
-    margin: 5px;
-}
-.opinionCard__opinion{
-    color: white;
-    margin: 5px;
-}
-.opinionCard__imgRating{
-    width: 100px;
-    margin: 5px;
-}
+
 /*Footer*/
 footer{
     grid-area: footer;
