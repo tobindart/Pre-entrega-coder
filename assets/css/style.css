@@ -94,17 +94,19 @@
     color: white;
 }
 .header__boot{
-    background-image: url(../img/rm251-aum-14-g.jpg);
-    background-size:cover;
+    background-color: #F06BF2;
     color: white;
 }
 /*Main*/
-main{
+.main__my{
     grid-area: main;
     background-image: url(../img/fondo-header-index.jpg);
+    background-size: auto;
     font-family: Roboto-Regular;
 }
-
+.main__boot{
+    background-color: #06002C;
+}
 /*Inicio*/
 
 .offer{
@@ -170,9 +172,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
     padding: 10px;
-    margin-left: 10px;
 }
 .list__nos__order{
     font-family: Roboto-Regular;
@@ -181,7 +181,6 @@ main{
     list-style: none;
 }
 .list__nos__item{
-    width: 450px;
     font-size: 40px;
     background-color: #06002C;
     text-align: center;
@@ -190,12 +189,7 @@ main{
     border: #F06BF2 solid;
     border-radius: 8px;
 }
-.list__nos__img{
-    padding: 10px;
-    margin: 10px;
-    height: 400px;
-    width: 612px;
-}
+
 .who__card{
     display: flex;
     flex-direction: column;
@@ -216,15 +210,16 @@ main{
     background-color: #06002C;
     text-align: center;
     padding: 10px;
+    margin: 10px;
     border: #F06BF2 solid;
-    height: 100px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
 }
 .who__img{
     padding: 10px;
     margin: 10px;
-    height: 400px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
 }
 
 .our__card{
@@ -249,15 +244,15 @@ main{
     text-align: center;
     padding: 10px;
     margin: 10px;
-    margin-right: 10px;
     border: #F06BF2 solid;
-    height: 150px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
 }
 .our__img{
-    height: 400px;
-    width: 700px;
-
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
 }
 .want__card{
     display: flex;
@@ -393,6 +388,15 @@ footer{
     display: flex;
     justify-content: space-around;
     background-color: #06002C;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+}
+.footer__card__boot{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F06BF2;
     color: white;
     text-decoration: none;
     font-family: Roboto-Regular;
