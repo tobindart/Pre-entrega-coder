@@ -42,22 +42,22 @@ nav{
 .navbar_my{
     grid-area: nav;
     font-family: Roboto-Regular;
-    display: flex;
 }
 @media screen and (max-width: 600px){
+    nav > label{
+        display: block;
+        color: #F06BF2;
+        font-size: 20px;
+        padding: 10px;
+    }
     .navbar_my{
         flex-direction: column;
         overflow: hidden;
         transition: 0.5s;
         max-height: 0px;
     }
-    nav label{
-        display: block;
-        color: #F06BF2;
-        font-size: 20px;
-        padding: 10px;
-    }
-    nav input:checked + .navbar_my{
+
+    nav  input:checked + .navbar_my{
         max-height: 400px;
     }
 }
