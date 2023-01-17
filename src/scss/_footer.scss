@@ -1,0 +1,24 @@
+footer{
+    grid-area: footer;
+}
+.footer__card{
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorPrincipal;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+}
+.footer__card__boot{
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorSecundario;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+}
+.footer__img{
+    height: 30px;
+}

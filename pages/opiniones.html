@@ -7,151 +7,92 @@
     <title>Computer World Shop</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/img/icon.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="img-nav" src="../assets/img/icon.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../pages/productos.html">PC</a></li>
-                  <li><a class="dropdown-item" href="../pages/productos.html">Notebooks</a></li>
-                  <li><a class="dropdown-item" href="../pages/productos.html">Periféricos</a></li>
-                  <li><a class="dropdown-item" href="../pages/productos.html">Pantallas</a></li>
-                  <li><a class="dropdown-item" href="../pages/productos.html">Accesorios</a></li>
+<body class="bodyGrid__opinion">
+    <nav class="navbar_my">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./productos.html">Productos</a>
+                <ul>
+                    <li><a href="">PC</a></li>
+                    <li><a href="">Notebooks</a></li>
+                    <li><a href="">Periféricos</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/envio.html">Envío</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/opiniones.html">Opiniones</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+            </li>
+            <li><a href="./envio.html">Envío</a></li>
+            <li><a href="./opiniones.html">Opiniones</a></li>
+        </ul>
     </nav>
-    <header class="header__boot row">
-        <div class="col-12 text-center">
-            <h1 class="fs-1 fw-bold">Opiniones</h1>
+    <header class="headerIndex">
+        <div class="headerIndex_info">
+            <h1>Opiniones</h1>
         </div>
     </header>
-    <main class="main__boot">
-        <section>
-            <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-4 col-4">
-                    <img src="../assets/img/fotodeperfil1.webp" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Luca Prodan</h5>
-                        <p class="card-text">Me gustó la calidad del producto, pero la atención al cliente no tanto.</p>
-                        <img src="../assets/img/3ymediode5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
+    <main class="main__my">
+        <h2 class="opinionTittle">Opiniones</h2>
+        <section class="opinionCards1">
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil1.webp" alt="">
+                <h5 class="opinionCard__name">Nahuel Molina</h5>
+                <p class="opinionCard__opinion">Me encantó la pantalla que compré, pero el precio me parece un poco exagerado.</p>
+                <img class="opinionCard__imgRating" src="../assets/img/3ymediode5.png" alt="">
             </div>
-            <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-4 col-4">
-                    <img src="../assets/img/fotodeperfil3.webp" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Jorge Echarri</h5>
-                        <p class="card-text">Muy buena la atención y el producto casi perfecto!</p>
-                        <img src="../assets/img/4ymediode5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-4 col-4">
-                    <img src="../assets/img/fotodeperfil4.webp" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Marcos Acuña</h5>
-                        <p class="card-text">El producto vino fallado, pero por lo menos vino en el tiempo correspondiente.</p>
-                        <img src="../assets/img/2ymediode5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-4 col-4">
-                    <img src="../assets/img/fotodeperfil5.jpg" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Camila Cottet</h5>
-                        <p class="card-text">Me encantó la atención, producto, envío eficiente, excelente relación calidad-precio!</p>
-                        <img src="../assets/img/5de5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="card" style="max-width: 540px;">
-                <div class="row g-0">
-                <div class="col-md-4 col-4">
-                    <img src="../assets/img/fotodeperfil6.jpg" class="img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Maria Elena</h5>
-                        <p class="card-text">Vale la pena gastar esa cantidad? No lo sé, pero el producto me fascina y eso lo vale! La atención deja que desear, eso si.</p>
-                        <img src="../assets/img/4de5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil2.webp" alt="">
+                <h5 class="opinionCard__name">Walter Machado</h5>
+                <p class="opinionCard__opinion">Excelente cada uno de los componentes del PC que me armé, atención impecable igualmente.</p>
+                <img class="opinionCard__imgRating" src="../assets/img/5de5.png" alt="">
             </div>
         </section>
-        <div class="row">
-            <h3 class="text-center border border-5 border-danger-subtle col-8 col-md-4 m-4 fs-2 text-light titulo-envio-custom">Danos tu opinión!</h3>
-        </div>
-        <div class="row">
-            <form class="col-6 form-envio-custom text-light p-2 border border-2 border-danger-subtle" action="">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Escriba su email">
-                </div>
-                <div class="mb-3">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="number" class="form-control" id="telefono" placeholder="Escriba su número de teléfono">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" placeholder="Escriba su opinión" id="opinion"></textarea>
-                    <label for="opinion">Contanos que te pareció!</label>
-                </div>
-                <button type="submit">Enviar</button>
+        <section class="opinionCards2">
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil3.webp" alt="">
+                <h5 class="opinionCard__name">Milagros Pascual</h5>
+                <p class="opinionCard__opinion">La relación calidad-precio no la encotnras en ningún lado.</p>
+                <img class="opinionCard__imgRating" src="../assets/img/4de5.png" alt="">
+            </div>
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil4.webp" alt="">
+                <h5 class="opinionCard__name">Jesús Becerra</h5>
+                <p class="opinionCard__opinion">La verdad no le tenía mucha fé pero me terminó de convencer la alta calidad de los productos.</p>
+                <img class="opinionCard__imgRating" src="../assets/img/4ymediode5.png" alt="">
+            </div>
+        </section>
+        <section class="opinionCards3">
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil5.jpg" alt="">
+                <h5 class="opinionCard__name">Camila Cottet</h5>
+                <p class="opinionCard__opinion">En general, tanto envío como atención al cliente y el producto, me parecieron perfectos!</p>
+                <img class="opinionCard__imgRating" src="../assets/img/5de5.png" alt="">
+            </div>
+            <div class="opinionCard">
+                <img class="opinionCard__imgProfile" src="../assets/img/fotodeperfil6.jpg" alt="">
+                <h5 class="opinionCard__name">María Fernandez</h5>
+                <p class="opinionCard__opinion">Me parece bastante mala la atención, tardan mucho en contestar.</p>
+                <img class="opinionCard__imgRating" src="../assets/img/2ymediode5.png" alt="">
+            </div>
+        </section>
+        <h5 class="opinionTittle">Danos tu opinión!</h5>
+        <div class="orderForm">
+            <form class="order__form" action="" method="get">
+                <label for="">Nombre:</label>
+                <input type="text" name="nombre" required>
+                <label for="">Apellido</label>
+                <input type="text" name="apellido" required>
+                <label for="">Email</label>
+                <input type="email" name="email" required>
+                <label for="">Calificación (entre 1 y 10)</label>
+                <input type="number" name="rating" required>
+                <label for="">Opinion</label>
+                <textarea name="opinion"></textarea required>
+                <input type="submit" value="Enviar">
             </form>
         </div>
     </main>
-    <footer class="footer__boot">
+    <footer>
         <section class="footer">
-            <div class="footer__card__boot">
+            <div class="footer__card">
                 <h4 class="footer__text">Computer World Shop</h4>
                 <img class="footer__img" src="../assets/img/twitter.png" alt="Twitter">
                 <img class="footer__img" src="../assets/img/instagram.png" alt="Instagram">
@@ -160,6 +101,5 @@
             </div>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

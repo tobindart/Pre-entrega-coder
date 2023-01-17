@@ -1,0 +1,26 @@
+.want__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    padding: 10px;
+}
+.want__tittle{
+    position: relative;
+    top: 0px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline solid $colorSecundario;
+}
+.want__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: $colorPrincipal;
+    color: white;
+    border: $colorSecundario solid 2px;
+}

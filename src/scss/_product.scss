@@ -1,0 +1,39 @@
+.productTittle{
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 60px;
+    font-family: Roboto-Regular;
+    color: white;
+    background-color: $colorPrincipal;
+    border: $colorSecundario solid 3px;
+    border-radius: 30px;
+    text-align: center;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.productCard{
+    @extend %card
+}
+.productCard__img{
+    width: 100%;
+}
+.productCard__tittle{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+.productCard__desc{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 2px inset $colorSecundario;
+    border-radius: 8px;
+
+}
+.productCard__btn{
+    @include card(white,$colorSecundario);
+}

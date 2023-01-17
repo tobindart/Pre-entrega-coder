@@ -1,0 +1,15 @@
+.headerIndex{
+    grid-area: header;
+    font-family: Roboto-Regular;
+    font-size: 40px;
+    background-image: url(../img/rm251-aum-14-g.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header__boot{
+    background-color: $colorSecundario;
+    color: white;
+}

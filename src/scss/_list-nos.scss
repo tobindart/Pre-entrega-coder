@@ -1,0 +1,21 @@
+.list__nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.list__nos__order{
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: white;
+    list-style: none;
+}
+.list__nos__item{
+    font-size: 40px;
+    background-color: $colorPrincipal;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+    border: $colorSecundario solid;
+    border-radius: 8px;
+}

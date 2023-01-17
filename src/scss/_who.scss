@@ -1,0 +1,31 @@
+.who__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto-Regular;
+    margin: 10px;
+    padding: 10px;
+}
+.who__tittle{
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline solid $colorSecundario;
+}
+.who__text{    
+    color: white;
+    background-color: $colorPrincipal;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: $colorSecundario solid;
+    height: 100%;
+    width: 100%;
+}
+.who__img{
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+}
