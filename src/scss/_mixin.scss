@@ -1,0 +1,6 @@
+@mixin button($color,$background){
+    padding: 2px;
+    border-radius: 5px;
+    background-color: $background;
+    color: $color;
+}

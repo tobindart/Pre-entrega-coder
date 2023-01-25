@@ -42,20 +42,6 @@ nav {
   font-family: Roboto-Regular;
   position: relative;
 }
-.navbar_my .fa-bars {
-  display: none;
-}
-@media (max-width: 600px) {
-  .navbar_my .fa-bars {
-    display: block;
-    color: #F06BF2;
-    font-size: 20px;
-    padding: 10px;
-  }
-  .navbar_my .fa-bars:hover + ul {
-    left: 0;
-  }
-}
 .navbar_my > ul {
   list-style: none;
   display: flex;
@@ -64,20 +50,6 @@ nav {
 .navbar_my > ul:hover {
   max-height: 320px;
   transition: 0.5s;
-}
-@media (max-width: 600px) {
-  .navbar_my > ul {
-    position: absolute;
-    left: -350px;
-    width: 250px;
-    height: 100vh;
-    background-color: #06002C;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar_my > ul:hover {
-    left: 0;
-  }
 }
 .navbar_my > ul > li {
   position: relative;
