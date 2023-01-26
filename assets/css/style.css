@@ -156,10 +156,15 @@ nav {
   width: 100%;
 }
 
+.who__images {
+  height: 400px;
+  width: 300px;
+}
+
 .who__img {
   padding: 10px;
   margin: 10px;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -253,18 +258,13 @@ footer {
 .list__nos {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
+  flex-direction: column;
 }
 
 .list__nos__order {
   font-family: Roboto-Regular;
-  font-size: 30px;
   color: white;
   list-style: none;
-}
-
-.list__nos__item {
   font-size: 40px;
   background-color: #06002C;
   text-align: center;
@@ -377,17 +377,22 @@ footer {
   width: 100%;
 }
 
+.our__images {
+  height: 400px;
+  width: 300px;
+}
+
 .our__img {
   padding: 10px;
   margin: 10px;
-  height: 300px;
+  height: auto;
   width: 100%;
 }
 
 .listShipping {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .listShipping__order {
@@ -398,7 +403,7 @@ footer {
 }
 
 .listShipping__item {
-  width: 100%;
+  color: white;
   font-size: 40px;
   background-color: #06002C;
   text-align: center;

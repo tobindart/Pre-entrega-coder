@@ -1,7 +1,7 @@
 .listShipping{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 .listShipping__order{
     font-family: Roboto-Regular;
@@ -10,7 +10,7 @@
     list-style: none;
 }
 .listShipping__item{
-    width: 100%;
+    color: white;
     font-size: 40px;
     background-color: #06002C;
     text-align: center;
