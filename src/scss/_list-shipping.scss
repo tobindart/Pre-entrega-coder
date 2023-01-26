@@ -2,9 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    padding: 10px;
-    align-items: center;
 }
 .listShipping__order{
     font-family: Roboto-Regular;
@@ -17,23 +14,15 @@
     font-size: 40px;
     background-color: #06002C;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     margin: 10px;
     border: #F06BF2 solid;
     border-radius: 8px;
 }
-.listShipping__img{
-    margin: 10px;
-    border: #F06BF2 solid 3px;
-    border-radius: 8px;
-    background-color: #06002C;
-    height: 430px;
-    width: 100%;
-}
 .localitiesTittle{
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 290px;
     height: 60px;
     font-family: Roboto-Regular;
     font-size: 30px;

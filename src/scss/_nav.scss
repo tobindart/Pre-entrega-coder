@@ -5,5 +5,44 @@ nav{
     grid-area: nav;
     font-family: Roboto-Regular;
     position: relative;
-    color: white;
+    .fa-bars{
+        display: none;
+        @media (max-width:600px){
+            display: block;
+            color: $colorSecundario;
+            font-size: 20px;
+            padding: 10px;
+            &:hover + ul{
+                left: 0;
+            }
+
+        }
+    }
+    > ul{
+        &:hover{
+            max-height: 320px;
+            transition: 0.5s;
+        }
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        > li{
+            position: relative;
+            > ul{
+                max-height: 0;
+                position: absolute;
+                list-style: none;
+                left: -4px;
+                overflow: hidden;
+                background-color: $colorPrincipal;
+            }
+            > a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            }
+        }
+    }
 }

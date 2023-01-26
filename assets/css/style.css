@@ -1,3 +1,18 @@
+.productCard, .offerCard {
+  background-color: #06002C;
+  width: 250px;
+  border: solid 3px #F06BF2;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  font-family: Roboto-Regular;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.productCard:hover, .offerCard:hover {
+  transform: translate(10px, 30px);
+}
+
 .bodyGrid__index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -42,6 +57,20 @@ nav {
   font-family: Roboto-Regular;
   position: relative;
 }
+.navbar_my .fa-bars {
+  display: none;
+}
+@media (max-width: 600px) {
+  .navbar_my .fa-bars {
+    display: block;
+    color: #F06BF2;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .navbar_my .fa-bars:hover + ul {
+    left: 0;
+  }
+}
 .navbar_my > ul {
   list-style: none;
   display: flex;
@@ -85,11 +114,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-}
-
-.header__boot {
-  background-color: #F06BF2;
   color: white;
 }
 
@@ -144,13 +168,14 @@ nav {
 }
 
 .form-envio-custom {
-  width: 600px;
+  width: 100%;
   margin: 20px auto;
   background-color: #06002C;
 }
 
 .calendar-custom {
   height: 300px;
+  width: 100%;
 }
 
 footer {
@@ -181,38 +206,10 @@ footer {
   height: 30px;
 }
 
-.offer {
-  font-family: Roboto-Regular;
-  color: white;
-  background-color: #06002C;
-  margin: 10px;
-  padding: 10px;
-  height: 55px;
-  width: 290px;
-  border: 3px solid #F06BF2;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.cards {
+.cards__my {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-.offerCard {
-  background-color: #06002C;
-  width: 250px;
-  border: solid 3px #F06BF2;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  font-family: Roboto-Regular;
-  font-size: 15px;
-  transition: 0.5s;
-}
-.offerCard:hover {
-  transform: translate(10px, 30px);
 }
 
 .offerCard__img {
@@ -238,6 +235,19 @@ footer {
   border-radius: 5px;
   background-color: #F06BF2;
   color: white;
+}
+
+.offer {
+  font-family: Roboto-Regular;
+  color: white;
+  background-color: #06002C;
+  margin: 10px;
+  padding: 10px;
+  height: 90px;
+  width: 280px;
+  border: 3px solid #F06BF2;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .list__nos {
@@ -267,8 +277,8 @@ footer {
 .productTittle {
   padding: 10px;
   margin: 10px;
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 70px;
   font-family: Roboto-Regular;
   color: white;
   background-color: #06002C;
@@ -283,23 +293,9 @@ footer {
   justify-content: space-evenly;
 }
 
-.productCard {
-  background-color: #06002C;
-  width: 250px;
-  border: solid 3px #F06BF2;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  font-family: Roboto-Regular;
-  font-size: 15px;
-  transition: 0.5s;
-}
-.productCard:hover {
-  transform: translate(10px, 15px);
-}
-
 .productCard__img {
   width: 100%;
+  height: 200px;
 }
 
 .productCard__tittle {
@@ -384,17 +380,13 @@ footer {
 .our__img {
   padding: 10px;
   margin: 10px;
-  height: 100%;
+  height: 300px;
   width: 100%;
 }
 
 .listShipping {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-  padding: 10px;
-  margin-left: 10px;
   align-items: center;
 }
 
@@ -406,28 +398,20 @@ footer {
 }
 
 .listShipping__item {
-  width: 450px;
+  width: 100%;
   font-size: 40px;
   background-color: #06002C;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   margin: 10px;
   border: #F06BF2 solid;
   border-radius: 8px;
 }
 
-.listShipping__img {
-  margin: 10px;
-  border: #F06BF2 solid 3px;
-  border-radius: 8px;
-  background-color: #06002C;
-  height: 430px;
-}
-
 .localitiesTittle {
   padding: 10px;
   margin: 10px;
-  width: 300px;
+  width: 290px;
   height: 60px;
   font-family: Roboto-Regular;
   font-size: 30px;
@@ -446,7 +430,7 @@ footer {
 
 .calendarGoogle {
   height: 400px;
-  width: 500px;
+  width: 100%;
 }
 
 .orderForm {
@@ -461,8 +445,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 320px;
   padding: 20px;
   margin: 20px;
   background-color: #06002C;
@@ -471,7 +455,7 @@ footer {
 }
 
 .opinionTittle {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 10px;
   padding: 10px;
   width: 300px;
@@ -489,29 +473,25 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
-  margin-left: 10px;
 }
 
 .opinionCards2 {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
-  margin-left: 10px;
 }
 
 .opinionCards3 {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
-  margin-left: 10px;
 }
 
 .opinionCard {
-  position: relative;
   padding: 10px;
   margin: 10px;
   width: 300px;
-  height: 280px;
+  height: 360px;
   font-family: Roboto-Regular;
   border: #F06BF2 2px solid;
   background-color: #06002C;
@@ -520,23 +500,19 @@ footer {
 .opinionCard__imgProfile {
   width: 80px;
   height: 80px;
-  margin: 5px;
 }
 
 .opinionCard__name {
   color: white;
   font-size: 20px;
-  margin: 5px;
 }
 
 .opinionCard__opinion {
   color: white;
-  margin: 5px;
 }
 
 .opinionCard__imgRating {
   width: 100px;
-  margin: 5px;
 }
 
 .localitiesMap {
@@ -544,8 +520,6 @@ footer {
 }
 
 .localitiesMap__google {
-  padding: 10px;
-  margin: 10px;
-  position: relative;
-  left: 400px;
+  width: 100%;
+  align-items: center;
 }

@@ -7,25 +7,44 @@
     <meta name="description" content="Envíos a todo el país!">
     <meta name="keywords" content="envío, OCA, correo argentino, gratis, llega hoy">
     <title>Envío</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/img/icon.jpg">
 </head>
 <body class="bodyGrid__envio">
-    <nav class="navbar_my">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./productos.html">Productos</a>
-                <ul>
-                    <li><a href="">PC</a></li>
-                    <li><a href="">Notebooks</a></li>
-                    <li><a href="">Periféricos</a></li>
+    <nav class="navbar navbar-expand-lg navbar_my">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../index.html">Inicio</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/productos.html">PC</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Pantallas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/envio.html">Envío</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pages/opiniones.html">Opiniones</a>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="./envio.html">Envío</a></li>
-            <li><a href="./opiniones.html">Opiniones</a></li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+    </nav>      
     <header class="headerIndex">
         <div class="headerIndex_info">
             <h1>Envío</h1>
@@ -38,7 +57,6 @@
                 <li class="listShipping__item">Días disponibles</li>
                 <li class="listShipping__item">Hacé tu pedido!</li>
             </ul>
-            <img class="listShipping__img" src="../assets/img/envios-a-domicilio.png" alt="Envío a domicilio">
         </div>
         <h3 class="localitiesTittle">Localidades</h3>
         <div class="localitiesMap">
@@ -48,7 +66,7 @@
         <div class="calendar">
             <iframe class="calendarGoogle" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&showTitle=0&showNav=0&showPrint=0&src=dG9iaW5kYXJ0QGdtYWlsLmNvbQ&src=NmYwNTNlOWRjZjY4YTA0Nzg3YWQ5MmJlYTY1Yzk3MDQxYTlkYWJjOTQzNzg4NmU3NDk4N2Q4NWQ3YTEyMzYyZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MzYwMzJjNjE4OTE0MjkwYTllZjNhM2QzZTdlNWQyOGFkYzMzMjZkNmU5ODY3MjAyOTFjMDJkMTIwNDBiMmM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%23EF6C00&color=%23A79B8E&color=%237986CB&color=%237986CB"></iframe>
         </div>
-        <h3 class="localitiesTittle">Hacé tu pedido!</h3>
+        <h3 class="localitiesTittle">Consultá tu pedido!</h3>
         <div class="orderForm">
             <form class="order__form" action="" method="get">
                 <label for="">Nombre:</label>
@@ -76,5 +94,6 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

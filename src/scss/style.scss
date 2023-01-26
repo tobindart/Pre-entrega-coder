@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixin";
+@import "extend";
 @import "grid";
 @import "nav";
 @import "reset";
@@ -18,5 +20,3 @@
 @import "order-form";
 @import "opinion";
 @import "map";
-@import "extend";
-@import "mixin";

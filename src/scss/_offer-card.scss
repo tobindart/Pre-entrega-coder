@@ -1,42 +1,41 @@
-.cards{
+.cards__my{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    .offer{
-        font-family: Roboto-Regular;
-        color: white;
-        background-color: $colorPrincipal;
-        margin: 10px;
-        padding: 10px;
-        height: 55px;
-        width: 290px;
-        border: 3px solid $colorSecundario;
-        border-radius: 15px;
-        text-align: center;
-        .offerCard{
-            @extend %card
-        }
-        .offerCard__img{
-            width: 100%;
-        }
-        .offerCard__tittle{
-            margin: 5px;
-            color: white;
-            font-size: 20px;
-        }
-        .offerCard__desc{
-            color: white;
-            margin: 10px;
-            padding: 5px;
-            border: 2px inset $colorSecundario;
-            border-radius: 8px;
-        
-        }
-        .offerCard__btn{
-            @include button(white,$colorSecundario)
-        }
-    }
-    
+}
+.offerCard{
+        @extend %card
+}
+.offerCard__img{
+    width: 100%;
+}
+.offerCard__tittle{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+.offerCard__desc{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 2px inset $colorSecundario;
+    border-radius: 8px;
+
+}
+.offerCard__btn{
+    @include button(white,$colorSecundario)
+}
+.offer{
+    font-family: Roboto-Regular;
+    color: white;
+    background-color: $colorPrincipal;
+    margin: 10px;
+    padding: 10px;
+    height: 90px;
+    width: 280px;
+    border: 3px solid $colorSecundario;
+    border-radius: 15px;
+    text-align: center;
 }
 
 
